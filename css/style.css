@@ -1,67 +1,77 @@
-p {
-color: olive;
-font-size: 26px;
+* {
+    box-sizing: border-box;
 }
 header {
-background-color: orange;
+    height: 20vh;
+    background-color: aquamarine;
+    color: brown;
+    padding: 10px;
+    border: 12px solid black;
+    margin: -8px -8px 8px;
 }
-header p {
-background-color: snow;
-border-bottom: 1px solid gray;
+section {
+    min-height: 100vh;
+    background-color: skyblue;
+    color: rgb(105, 5, 198);
+    border-bottom: 2px dotted black;
 }
 footer {
-background-color: lightcoral;
+    width: 200px;
+    padding: 5px;
+    border: 2px solid black;
+    margin: 5px auto;
+    color: green;
+    font-size: 0.8rem;
+    text-align: center;
 }
-a:link {
-color: darkblue;
-background-color: peachpuff;
-text-decoration: none;
+figure {
+    position: relative;
+    margin: 0;
 }
-a:visited {
-color: seagreen;
+#interesting-banner {
+    position: sticky;
+    z-index: 3;
+    top: 0;
+    padding: 10px 15px;
+    border: 12px solid lightsalmon;
+    margin: 0 -8px;
+    background: firebrick;
+    color: white;
+    font-weight: bold;
+  }
+aside img, #bio {
+    width: 100%;
+    max-width: 600px;
 }
-a:hover {
-text-decoration: underline;
+#bio {
+    padding: 2rem;
+    border: 5px solid tomato;
+    background-color: mistyrose;
 }
-a:focus {
-color: white;
-background-color: orange;
+Ul li{
+    display: block;
+    background-color: yellow;
+    width: 98%;
+    padding: 10px 0;
+    margin: 0.6rem 0;
+    text-align: center;
 }
-ol li {
-letter-spacing: 3px;
-color: tomato;
+
+@media print {
+    section {
+      min-height: auto;
+    }
+    #interesting-banner {
+      display: none;
+    }
 }
-ol li:first-child {
-font-weight: bold;
-}
-ul li {
-list-style: none;
-}
-#education {
-border: 3px solid red;
-}
-#education h3 {
-font-family: Arial, sans-serif;
-font-size: 32px;
-}
-#skills-list {
-background-color: aliceblue;
-padding: 36px;
-}
-.top-skill {
-font-weight: bold;
-background-color: teal;
-color: papayawhip;
-}
-.date {
-border: 2px solid steelblue;
-border-radius: 12px;
-padding: 6px;
-}
-.special {
-text-transform: uppercase;
-background-color: papayawhip;
-}
-#proud {
-font-size: 48px;
+@media screen and (min-width: 750px) {
+    Ul li{
+        display: inline-block;
+        background-color: yellow;
+        width: 30%;
+        padding: 10px 0;
+        text-align: center;
+    }
+    
 }
