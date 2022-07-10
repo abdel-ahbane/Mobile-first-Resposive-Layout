@@ -4,22 +4,13 @@
 
 .container {
 	display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
 }
 
-  /*
-  to make an item float to one side in distribute available space between it and the other items we use the following: 
-  margin-right: auto;
-   */
-
-.item-5 {
-  order: 1;   /* all items have an order value of 0 by default */
-}
 .item {
-  flex-grow: 1;
-}
-.item-5 {
-  flex-grow: 5;
+  flex: 1 200px;  /* flex shorcut for flex-grow, flex-shrink, and flex-basis */
 }
