@@ -1,16 +1,13 @@
 /* ================================= 
-  Flexbox
+  Media Queries
 ==================================== */
 
-.container {
-	display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  height: 80vh;
-  justify-content: center;
-  align-items: center;
+@media (min-width: 769px) {
+
+	
+
 }
 
-.item {
-  flex: 1 200px;  /* flex shorcut for flex-grow, flex-shrink, and flex-basis */
+@media (min-width: 1025px) {
+
 }
