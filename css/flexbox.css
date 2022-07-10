@@ -5,4 +5,21 @@
 .container {
 	display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+  /*
+  to make an item float to one side in distribute available space between it and the other items we use the following: 
+  margin-right: auto;
+   */
+
+.item-5 {
+  order: 1;   /* all items have an order value of 0 by default */
+}
+.item {
+  flex-grow: 1;
+}
+.item-5 {
+  flex-grow: 5;
 }
