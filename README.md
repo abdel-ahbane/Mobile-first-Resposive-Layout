@@ -1,2 +1,2 @@
-# Mobile-first-Resposive-Layout
- My 2nd project with treehouse Techdegree program
+# P2
+ Techdegree project 2
