@@ -8,10 +8,12 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(228, 226, 226);
+
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.5;
     color: black;
     text-align: center;
+
 }
 p {
     padding: 1em;
@@ -23,6 +25,8 @@ h1, h2, h3, a {
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
+
+    margin: 0.5em 0;
 }
 h1 {
     font-size: 1.8rem;
@@ -35,27 +39,67 @@ h3 {
 }
 ul {
     margin: 2px;
-    padding: 1em;
+    padding: 0.5em;
     list-style: none;
 }
 figure, img {
     max-width: 100%;
     margin: 0;
 }
+footer a {
+    font-weight: normal;
+}
+li p {
+    margin: 2px;
+    padding: 1px;
+}
 
 
 /* |||||  Layout styles  ||||| */
 
+
+body {
+    display: flex;
+    flex-direction: column;
+}
 header, footer {
     width: 100%;
     margin: 0;
-    padding: 1em;
+    padding: 0.8em;
 }
 main {
-    margin: 12px 2%;
-    padding: 1em 0.4em;
+    margin: 8px 2%;
+    padding: 0.4em 0.4em;
     background-color: white;
 }
+.main-nav ul {
+    margin: 0 0 1em 0;
+    padding: 0;
+}
+.main-nav li {
+    background-color: whitesmoke;
+    margin: 0.5em;
+}
+section {
+    border: 1px solid grey;
+    padding: 2px;
+}
+header, .main-nav, #main-content {
+    display: flex;
+    flex-direction: column;
+    
+}
+.sticky-footer {
+    display: flex;
+    justify-content: right;
+}
+.hide {
+    display: none;
+}
+.logo {
+    margin-right: auto;
+}
+
 
 /* |||||  Media Queries  ||||| */
 
