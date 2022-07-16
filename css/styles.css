@@ -53,6 +53,12 @@ li p {
     margin: 2px;
     padding: 1px;
 }
+header p, .foot-p {
+    font-size: 1rem;
+}
+a:hover, a:focus {
+    color: orange;
+}
 
 
 /* |||||  Layout styles  ||||| */
@@ -77,14 +83,15 @@ main {
     padding: 0;
 }
 .main-nav li {
-    background-color: whitesmoke;
+    background-color: rgba(245, 245, 245, 0.7);
     margin: 0.5em;
+    padding: 0.2em 1em;
 }
 section {
     border: 1px solid grey;
     padding: 2px;
 }
-header, .main-nav, #main-content {
+header, #main-content {
     display: flex;
     flex-direction: column;
     
@@ -95,11 +102,47 @@ header, .main-nav, #main-content {
 }
 .hide {
     display: none;
+    margin: 0 0.5em;
+    padding: 0.2em 0.5em;
 }
 .logo {
     margin-right: auto;
+}
+.foot-p {
+    /* fix the footer paragraph */
+    margin: 0.4em 1em;
+    padding: 0 1.5em;
 }
 
 
 /* |||||  Media Queries  ||||| */
 
+/* -----Tablet view----- */
+
+@media screen and (min-width: 768px) {
+    .main-nav ul {
+        display: flex;
+        justify-content: center;
+    }
+    #main-content {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    section {
+        flex-basis: 50%;
+    }
+    header {
+        display: block;
+    }
+    header figure img {
+        float: right;
+        margin-left: 0.5em;
+    }
+    .hide1 {
+        display: none;
+    }
+    .hide {
+        display: block;
+    }
+    
+}
