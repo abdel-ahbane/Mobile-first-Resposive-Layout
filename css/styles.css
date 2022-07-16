@@ -1,3 +1,61 @@
+/* |||||  General styles  ||||| */
+
 * {
     box-sizing: border-box;
 }
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(228, 226, 226);
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    color: black;
+    text-align: center;
+}
+p {
+    padding: 1em;
+    font-size: 0.8em;
+    /* text-align: center; */
+}
+h1, h2, h3, a {
+    color: rgb(20, 0, 0);
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+h1 {
+    font-size: 1.8rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1.1rem;
+}
+ul {
+    margin: 2px;
+    padding: 1em;
+    list-style: none;
+}
+figure, img {
+    max-width: 100%;
+    margin: 0;
+}
+
+
+/* |||||  Layout styles  ||||| */
+
+header, footer {
+    width: 100%;
+    margin: 0;
+    padding: 1em;
+}
+main {
+    margin: 12px 2%;
+    padding: 1em 0.4em;
+    background-color: white;
+}
+
+/* |||||  Media Queries  ||||| */
+
